@@ -2,10 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Test\CallApi;
 use App\Test\Telegram;
-use App\Bot;
 
 class TestController extends Controller
 {

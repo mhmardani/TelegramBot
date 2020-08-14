@@ -20,11 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21a2242d-1bc6-4ab1-9dc1-519cf3e4a4c1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TestController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Test/Telegram.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Test/Telegram.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_14_160027_create_bots_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_14_160027_create_bots_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +178,7 @@
       <workItem from="1597234463173" duration="27150000" />
       <workItem from="1597330661187" duration="8140000" />
       <workItem from="1597418802687" duration="2762000" />
-      <workItem from="1597422014237" duration="3085000" />
+      <workItem from="1597422014237" duration="3726000" />
     </task>
     <servers />
   </component>

@@ -15,7 +15,7 @@ class CreateBotsTable extends Migration
     {
         Schema::create('bots', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('userName');
+            $table->string('userName')->unique();
             $table->integer('lastUpdateId')->default(0);
             $table->timestamps();
         });
