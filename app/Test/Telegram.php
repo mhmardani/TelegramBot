@@ -69,14 +69,16 @@ class Telegram {
 
     public function updatesHandler() {
         $updates = $this->getUpdates();
+        $lastUpdateId = 0;
         foreach($updates->result as &$update) {
-            $this->updateLastUpdateId($update->update_id);
             if(isset($this->commands[$update->message->text][1])) {
                 $this->commands[$update->message->text][1]($update);
             } else {
                 $this->sendMessage($update->message->text . ' is not supported yet!', $update->message->chat->id);
             }
+            $lastUpdateId = $update->update_id;
         }
+        $this->updateLastUpdateId($lastUpdateId);
     }
 
 
