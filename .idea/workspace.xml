@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="21a2242d-1bc6-4ab1-9dc1-519cf3e4a4c1" name="Default Changelist" comment="" />
+    <list default="true" id="21a2242d-1bc6-4ab1-9dc1-519cf3e4a4c1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TestController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Test/Telegram.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Test/Telegram.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +34,9 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
@@ -125,7 +152,9 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -137,6 +166,9 @@
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="21a2242d-1bc6-4ab1-9dc1-519cf3e4a4c1" name="Default Changelist" comment="" />
@@ -147,6 +179,8 @@
       <workItem from="1597155905054" duration="20303000" />
       <workItem from="1597234463173" duration="27150000" />
       <workItem from="1597330661187" duration="8140000" />
+      <workItem from="1597418802687" duration="2762000" />
+      <workItem from="1597422014237" duration="3085000" />
     </task>
     <servers />
   </component>
@@ -156,7 +190,23 @@
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="320" y="115" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597422201207">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="115" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1597422201207" />
     <state x="319" y="314" width="326" height="438" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1597399082847">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -165,6 +215,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="230" y="298" width="524" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1597321647901" />
+    <state width="233" height="457" key="HiddenNamespacesPopup" timestamp="1597422066975">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="233" height="457" key="HiddenNamespacesPopup/0.0.1440.900@0.0.1440.900" timestamp="1597422066975" />
     <state x="242" y="269" width="499" height="537" key="NewPhpClassDialog" timestamp="1597218290994">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -185,5 +239,9 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="624" y="248" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1597319392520" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1597421131728">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1597421131728" />
   </component>
 </project>

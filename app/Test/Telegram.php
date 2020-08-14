@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Test;
-use App\Test\CallApi;
+use App\Bot;
 use App\Test\Commands\GetMe;
 use App\Test\Commands\Help;
 use App\Test\Commands\Start;
@@ -9,10 +9,10 @@ use App\Test\Commands\Start;
 class Telegram {
     protected $baseUrl = 'https://api.telegram.org/bot';
 
-    public function __construct() {
-        $this->TOKEN = '1267494595:AAGFKKPCU2Ui1oQOalBWHJ3WjfAAJGG4f30';
+    public function __construct($token = '', $username = '') {
+        $this->token = ($token ?  $token : env('TELEGRAM_BOT_TOKEN'));
+        $this->username = ($username ?  $username : env('TELEGRAM_BOT_USERNAME'));
         $this->request = new CallApi();
-        $this->lastUpdateId = 0;
         $this->commands = array(
             '/start' => [
                 Start::$description,
@@ -35,20 +35,25 @@ class Telegram {
                 }
             ]
         );
-//        dd($this->commands['/start'][0]);
     }
 
     private function urlMaker($path) {
-        return $this->baseUrl . $this->TOKEN . $path;
+        return $this->baseUrl . $this->token . $path;
     }
 
     private function getUpdates() {
-//        $updates = $this->request->callApi('GET', $this->urlMaker('/getUpdates'), false);
+        $bot = Bot::findByUserNameOrCreate($this->username);
         $updates = $this->request->callApi('GET', $this->urlMaker('/getUpdates'), [
-            'offset' => $this->lastUpdateId,
+            'offset' => $bot->lastUpdateId,
             'limit' => 10000
         ]);
         return $updates;
+    }
+
+    private function updateLastUpdateId($update_id){
+        $bot = Bot::findByUserNameOrCreate($this->username);
+        $bot->lastUpdateId = $update_id+1;
+        $bot->update();
     }
 
     public function sendMessage($text = '', $chat_id = null) {
@@ -64,21 +69,15 @@ class Telegram {
 
     public function updatesHandler() {
         $updates = $this->getUpdates();
-
         foreach($updates->result as &$update) {
+            $this->updateLastUpdateId($update->update_id);
             if(isset($this->commands[$update->message->text][1])) {
                 $this->commands[$update->message->text][1]($update);
-                $update_id = $update->update_id;
-//                $sql = "INSERT INTO updates (update_id) VALUE ($update_id)";
             } else {
                 $this->sendMessage($update->message->text . ' is not supported yet!', $update->message->chat->id);
-            };
-//            if($update->update_id > $this->lastUpdateId) {
-//                $this->lastUpdateId = $update->update_id;
-//            }
-//            if($update_id > $this->lastUpdateId) {
-//                $this->lastUpdateId = $update->update_id;
-//            }
+            }
         }
     }
+
+
 }
